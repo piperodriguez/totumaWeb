@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="¡Bienvenido a Totuma Express restaurante! Descubre nuestros deliciosos platos.">
+    <meta name="keywords" content="restaurante, comida, menú, cena, almuerzo, saludable, buffet">
+    <meta name="author" content="Totuma Express">	
+	<title>Totuma Express</title>
+	<link rel="icon" href="src/pictures/shortIcon.png" type="image/x-icon">
+	<!--Hojas de estilo-->
+	<link rel="stylesheet" type="text/css" href="src/css/librerias/bootstrap.css">
+	<link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="src/css/menu.css">
+	<!--Scripts-->
+	<script src="src/js/librerias/jquery.js"></script>
+</head>
+<body>
+
+
+<!--Menu Tipo Sidebar-->
+<div class="wrapper">
+    <aside id="sidebar">
+        <div class="d-flex">
+           <button class="toggle-btn" type="button">
+              <i class="lni lni-restaurant"></i>
+           </button>
+           <div class="sidebar-logo">
+             <a class="navbar-brand" href="#"><img src="src/pictures/logoTotuma2.png" alt="" width="170" height="80"></a>
+           </div>
+        </div>
+        <ul class="sidebar-nav">
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                   <i class="lni lni-trello"></i>
+                   <span>Carta</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                   <i class="lni lni-service"></i>
+                   <span>Eventos</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                   <i class="lni lni-envelope"></i>
+                   <span>Reservas</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
+                   <i class="lni lni-coffee-cup"></i>
+                   <span>Conocemos</span>
+                </a>
+                <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Datos de Contacto</a>
+                    </li>
+                    <li class="sidebar-item">
+                         <a href="#" class="sidebar-link">Nuestra Historia</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="sidebar-footer">
+            <a href="#" class="sidebar-link">
+              <i class="lni lni-map-marker"></i>
+              <span>Cómo llegar</span>
+            </a>
+        </div>
+    </aside>
+    <!--Contenido Pagina-->
+    <div class="main p-3">
+       <div class="text-center">
+          <h1>Contenido de la pagina</h1>
+       </div>
+    </div>
+</div>
+
+
+
+<!--Scripts-->
+<script src="src/js/librerias/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="src/js/menu.js"></script>
+
+</body>
+</html>
