@@ -27,14 +27,14 @@ body {
     display: flex;
 }
 
-.main {
+#main {
     position: relative;
     margin-left: 18%;
     min-height: 100vh;
     width: 82%;
     overflow: hidden;
     transition: all 0.35s ease-in-out;
-    background-color: #fafbfe;
+    background-color: whitesmoke;
 }
 
 #sidebar {
