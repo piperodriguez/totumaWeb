@@ -24,7 +24,7 @@
               <i class="lni lni-restaurant"></i>
            </button>
            <div class="sidebar-logo">
-             <a class="navbar-brand" href="#">
+             <a class="navbar-brand" href="#" id="home">
              	<img src="src/pictures/totumaHoja.png" alt="" width="170" height="80">
          	 </a>
            </div>
@@ -38,28 +38,28 @@
                 </a>
                 <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link" id=""> 
+                        <a href="#" class="sidebar-link" id="entradas"> 
                           <i class="lni lni-trello"></i>
                           Entradas
                         </a>
                     </li>
                     <li class="sidebar-item">
-                         <a href="#" class="sidebar-link" id="">Platos Fuertes</a>
+                         <a href="#" class="sidebar-link" id="fuerte">Platos Fuertes</a>
                     </li>
                     <li class="sidebar-item">
-                         <a href="#" class="sidebar-link" id="">Ensaladas</a>
+                         <a href="#" class="sidebar-link" id="salad">Ensaladas</a>
                     </li>
                     <li class="sidebar-item">
-                         <a href="#" class="sidebar-link" id="">Chill</a>
+                         <a href="#" class="sidebar-link" id="chill">Chill</a>
                     </li>
                     <li class="sidebar-item">
-                         <a href="#" class="sidebar-link" id="">
+                         <a href="#" class="sidebar-link" id="postres">
                           <i class="lni lni-candy"></i>
                          Postres
                         </a>
                     </li>
                     <li class="sidebar-item">
-                         <a href="#" class="sidebar-link" id="">Bebidas</a>
+                         <a href="#" class="sidebar-link" id="bebidas">Bebidas</a>
                     </li>
                 </ul>
             </li>
@@ -67,7 +67,7 @@
                 <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
                         data-bs-target="#conocemos" aria-expanded="false" aria-controls="conocemos">
                    <i class="lni lni-coffee-cup"></i>
-                   <span>Conocemos</span>
+                   <span>Contactanos</span>
                 </a>
                 <ul id="conocemos" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
@@ -100,44 +100,55 @@
     </aside>
     <!--Contenido Pagina-->
     <div id="main">
-    	<div class="text-center" id="contentCarta">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/SABORATIERRA_page-0001Recortada.jpg">
-    		<!--<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0002.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0003.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0004.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0005.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0006.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0007.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0008.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0009.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0010.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0011.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0012.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0013.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0014.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0015.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0016.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0017.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0018.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0019.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0020.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0021.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0022.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0023.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0024.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0025.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0026.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0027.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0028.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0029.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0030.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0031.jpg">
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0032.jpg">-->
-    		<img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0033.jpg">
-    		
-    	</div>
+      <div id="divHome">
+        <img class="img-fluid img-thumbnail" src="src/pictures/SABORATIERRA_page-0001Recortada.jpg">
+        <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0002.jpg"> 
+        <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0033.jpg">
+      </div>
+      <div id="divEntradas">
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0003.jpg">
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0005.jpg">
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0006.jpg">
+      </div>
+      <div id="divPlatoFuertes">
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0007.jpg">
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0008.jpg">
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0009.jpg">
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0010.jpg">
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0011.jpg">
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0012.jpg">
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0013.jpg">
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0014.jpg">
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0015.jpg">
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0016.jpg">
+      </div>
+      <div id="divEnsaladas">
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0017.jpg">
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0018.jpg">
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0019.jpg">
+      </div>
+      <div id="divChill">
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0020.jpg">
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0021.jpg">
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0022.jpg">
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0023.jpg">
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0024.jpg">
+      </div>
+      <div id="divPostres">
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0025.jpg">
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0026.jpg">
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0027.jpg">
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0028.jpg">
+      </div>
+      <div id="divBebidas">
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0030.jpg">
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0031.jpg">
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0032.jpg">
+      </div>
        <div class="text-center" id="contentEventos">
           <h1>Contenido de la pagina Eventos</h1>
+          <!--
+          <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0029.jpg">-->
        </div>
        <div class="text-center" id="contentReserva">
           <h1>Contenido de la pagina Reserva</h1>
@@ -149,8 +160,8 @@
           <h1>Contenido de la pagina Historia</h1>
        </div>
        <div class="text-center" id="contenedorubicacion">
-            <br>
-           <img src="src/pictures/shortIcon.png" class="img-fluid" style="width: 200px;">
+          <br>
+          <img src="src/pictures/shortIcon.png" class="img-fluid" style="width: 200px;">
           <h1>Calle 20 # 8 - 13 Local 3</h1>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.2333472420296!2d-73.36267522595956!3d5.532364233888904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a7c2d463042fb%3A0x77a1480fb47ad9ec!2sLa%20Pila%20Del%20Mono!5e0!3m2!1ses!2sco!4v1715437501595!5m2!1ses!2sco" width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
        </div>
