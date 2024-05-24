@@ -1,0 +1,14 @@
+div#formularioContacto {
+    display: flex;
+    justify-content: center;
+}
+
+img.imgTotuma {
+    padding-bottom: 50px;
+    width: 200px;
+}
+
+div#main {
+    position: relative;
+    margin-left: 20%;
+}

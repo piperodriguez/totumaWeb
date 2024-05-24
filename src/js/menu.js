@@ -3,9 +3,7 @@ $(document).ready(function(){
 	
 	let objDivsInicioOcultar = {
 		div1: 'contentEventos',
-		div2: 'contentReserva',
 		div3: 'contentContacto',
-		div4: 'contentHistoria',
 		div5: 'contenedorubicacion',
 		div6: 'divEntradas',
 		div8: 'divPlatoFuertes',
@@ -21,9 +19,7 @@ $(document).ready(function(){
 	$("#home").on('click', function(){
 		let objDivsInicioOcultar = {
 			div1: 'contentEventos',
-			div2: 'contentReserva',
 			div3: 'contentContacto',
-			div4: 'contentHistoria',
 			div5: 'contenedorubicacion',
 			div6: 'divEntradas',
 			div8: 'divPlatoFuertes',
@@ -31,7 +27,6 @@ $(document).ready(function(){
 			div10: 'divChill',
 			div11: 'divPostres',
 			div12: 'divBebidas'
-
 		};
 		accionCapas(objDivsInicioOcultar, 'hide');
 		accionCapas({div1: 'divHome'}, 'show');
@@ -41,9 +36,7 @@ $(document).ready(function(){
     	const objDivs = {
 		  div1: 'contenedorubicacion',
 		  div2: 'contentEventos',
-		  div3: 'contentReserva',
 		  div4: 'contentContacto',
-		  div5: 'contentHistoria',
 		  div7: 'divHome',
 		  div8: 'divPlatoFuertes',
 		  div9: 'divEnsaladas',
@@ -61,9 +54,7 @@ $(document).ready(function(){
     	const objDivs = {
 		  div1: 'contenedorubicacion',
 		  div2: 'contentEventos',
-		  div3: 'contentReserva',
 		  div4: 'contentContacto',
-		  div5: 'contentHistoria',
 		  div7: 'divHome',
 		  div8: 'divEntradas',
 		  div9: 'divEnsaladas',
@@ -79,10 +70,7 @@ $(document).ready(function(){
     	const objDivs = {
 		  div1: 'contenedorubicacion',
 		  div2: 'contentEventos',
-		  div3: 'contentReserva',
 		  div4: 'contentContacto',
-		  div5: 'contentHistoria',
-		  div6: 'contentCarta',
 		  div7: 'divHome',
 		  div8: 'divEntradas',
 		  div9: 'divPlatoFuertes',
@@ -99,10 +87,7 @@ $(document).ready(function(){
     	const objDivs = {
 		  div1: 'contenedorubicacion',
 		  div2: 'contentEventos',
-		  div3: 'contentReserva',
 		  div4: 'contentContacto',
-		  div5: 'contentHistoria',
-		  div6: 'contentCarta',
 		  div7: 'divHome',
 		  div8: 'divEntradas',
 		  div9: 'divPlatoFuertes',
@@ -120,10 +105,7 @@ $(document).ready(function(){
     	const objDivs = {
 		  div1: 'contenedorubicacion',
 		  div2: 'contentEventos',
-		  div3: 'contentReserva',
 		  div4: 'contentContacto',
-		  div5: 'contentHistoria',
-		  div6: 'contentCarta',
 		  div7: 'divHome',
 		  div8: 'divEntradas',
 		  div9: 'divPlatoFuertes',
@@ -140,10 +122,7 @@ $(document).ready(function(){
     	const objDivs = {
 		  div1: 'contenedorubicacion',
 		  div2: 'contentEventos',
-		  div3: 'contentReserva',
 		  div4: 'contentContacto',
-		  div5: 'contentHistoria',
-		  div6: 'contentCarta',
 		  div7: 'divHome',
 		  div8: 'divEntradas',
 		  div9: 'divPlatoFuertes',
@@ -160,51 +139,39 @@ $(document).ready(function(){
     $("#pageEventos").on('click', function(){
 		const objDivs = {
 		  div1: 'contenedorubicacion',
-		  div3: 'contentReserva',
 		  div4: 'contentContacto',
-		  div5: 'contentHistoria'
+		  div7: 'divHome',
+		  div8: 'divEntradas',
+		  div9: 'divPlatoFuertes',
+		  div10: 'divEnsaladas',
+		  div11: 'divChill',
+		  div12: 'divPostres'
+
 		};
 		accionCapas(objDivs, 'hide');
 		accionCapas({div1: 'contentEventos'}, 'show');
     	
     });
-    $("#pageReserva").on('click', function(){
-		const objDivs = {
-		  div1: 'contenedorubicacion',
-		  div2: 'contentEventos',
-		  div4: 'contentContacto',
-		  div5: 'contentHistoria'
-		};
-		accionCapas(objDivs, 'hide');
-		accionCapas({div1: 'contentReserva'}, 'show');
-
-    });
     $("#pageContacto").on('click', function(){
 		const objDivs = {
 		  div1: 'contenedorubicacion',
 		  div2: 'contentEventos',
-		  div4: 'contentReserva',
-		  div5: 'contentHistoria'
+		  div7: 'divHome'
 		};
 		accionCapas(objDivs, 'hide');
     	accionCapas({div1: 'contentContacto'}, 'show');
     });
-    $("#PageHistoria").on('click', function(){
-		const objDivs = {
-		  div1: 'contenedorubicacion',
-		  div2: 'contentEventos',
-		  div4: 'contentReserva',
-		  div5: 'contentContacto'
-		};
-		accionCapas(objDivs, 'hide');
-    	accionCapas({div1: 'contentHistoria'}, 'show');
-    });
+
     $("#ubicacion").on('click', function(){
 		const objDivs = {
 		  div1: 'contentContacto',
 		  div2: 'contentEventos',
-		  div4: 'contentReserva',
-		  div5: 'contentHistoria'
+		  div7: 'divHome',
+		  div8: 'divEntradas',
+		  div9: 'divPlatoFuertes',
+		  div10: 'divEnsaladas',
+		  div11: 'divChill',
+		  div12: 'divBebidas'
 		};
 		accionCapas(objDivs, 'hide');
 		accionCapas({div1: 'contenedorubicacion'}, 'show');
@@ -213,6 +180,7 @@ $(document).ready(function(){
 
 const hamBurger = document.querySelector(".toggle-btn");
 hamBurger.addEventListener("click", function () {
+
 
 	let contenedorMenu, sidebar, contenidoPagina;
 
@@ -223,25 +191,22 @@ hamBurger.addEventListener("click", function () {
 	//contenidoPagina	
 
 	if (sidebar.value == "expand") {
-		contenedorMenu.style.marginLeft = "18%";
-		contenedorMenu.style.width = "82%";
+		//contenedorMenu.style.marginLeft = "18%";
+		//contenedorMenu.style.width = "82%";
 		
 	} else {
-		contenedorMenu.style.marginLeft = "6%";
-		contenedorMenu.style.width = "99%";
+		//contenedorMenu.style.marginLeft = "6%";
+		//contenedorMenu.style.width = "99%";
 	}
    
 });
 
 
 function accionCapas(objCapas, accion){
-	console.log(accion)
 	for (let clave in objCapas){
 		if (accion == 'hide') {
-			console.log('ocultar');
 			$("#"+objCapas[clave]).hide();
 		}else{
-			console.log('mostrar');
 			$("#"+objCapas[clave]).show();
 		}
 	}

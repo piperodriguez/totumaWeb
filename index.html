@@ -12,8 +12,10 @@
     <link rel="stylesheet" type="text/css" href="src/css/librerias/bootstrap.css">
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="src/css/menu.css">
+    <link rel="stylesheet" type="text/css" href="src/css/general.css">
     <!--Scripts-->
     <script src="src/js/librerias/jquery.js"></script>
+
 </head>
 <body>
 <!--Menu Tipo Sidebar-->
@@ -26,31 +28,38 @@
            <div class="sidebar-logo">
              <a class="navbar-brand" href="#" id="home">
              	<img src="src/pictures/totumaHoja.png" alt="" width="170" height="80">
-         	 </a>
+         	  </a>
            </div>
         </div>
         <ul class="sidebar-nav">
             <li class="sidebar-item">
                 <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
                         data-bs-target="#auth" aria-expanded="false" aria-controls="auth" id="pageCarta">
-                   <i class="lni lni-trello"></i>
+                   <!--<i class="lni lni-trello"></i>-->
+                   <i class="lni lni-library"></i>
                    <span>Carta</span>
                 </a>
                 <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link" id="entradas"> 
-                          <i class="lni lni-trello"></i>
+                          <i class="lni lni-pizza"></i>
                           Entradas
                         </a>
                     </li>
                     <li class="sidebar-item">
-                         <a href="#" class="sidebar-link" id="fuerte">Platos Fuertes</a>
+                         <a href="#" class="sidebar-link" id="fuerte">
+                            <i class="lni lni-service"></i>
+                            Platos Fuertes
+                         </a>
                     </li>
                     <li class="sidebar-item">
-                         <a href="#" class="sidebar-link" id="salad">Ensaladas</a>
+                         <a href="#" class="sidebar-link" id="salad">
+                          <i class="lni lni-leaf"></i>
+                         Ensaladas</a>
                     </li>
                     <li class="sidebar-item">
-                         <a href="#" class="sidebar-link" id="chill">Chill</a>
+                         <a href="#" class="sidebar-link" id="chill">
+                         <i class="lni lni-mushroom"></i>Chill</a>
                     </li>
                     <li class="sidebar-item">
                          <a href="#" class="sidebar-link" id="postres">
@@ -59,35 +68,30 @@
                         </a>
                     </li>
                     <li class="sidebar-item">
-                         <a href="#" class="sidebar-link" id="bebidas">Bebidas</a>
+                        
+                        <a href="#" class="sidebar-link" id="bebidas">
+                          <i class="lni lni-fresh-juice"></i>
+                        Bebidas</a>
                     </li>
                 </ul>
             </li>
             <li class="sidebar-item">
                 <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
                         data-bs-target="#conocemos" aria-expanded="false" aria-controls="conocemos">
-                   <i class="lni lni-coffee-cup"></i>
+                   <i class="lni lni-envelope"></i>
                    <span>Contactanos</span>
                 </a>
                 <ul id="conocemos" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link" id="pageContacto">Datos de Contacto</a>
-                    </li>
-                    <li class="sidebar-item">
-                         <a href="#" class="sidebar-link" id="PageHistoria">Nuestra Historia</a>
+                        <a href="#" class="sidebar-link" id="pageContacto">
+                        <i class="lni lni-popup"></i></i>Datos de Contacto</a>
                     </li>
                 </ul>
             </li>
             <li class="sidebar-item">
                 <a href="#" class="sidebar-link" id="pageEventos">
-                   <i class="lni lni-service"></i>
+                   <i class="lni lni-offer"></i>
                    <span>Eventos</span>
-                </a>
-            </li>
-            <li class="sidebar-item">
-                <a href="#" class="sidebar-link" id="pageReserva">
-                   <i class="lni lni-envelope"></i>
-                   <span>Reservas</span>
                 </a>
             </li>
         </ul>
@@ -99,9 +103,9 @@
         </div>
     </aside>
     <!--Contenido Pagina-->
-    <div id="main">
+    <div id="main" class="container">
       <div id="divHome">
-        <img class="img-fluid img-thumbnail" src="src/pictures/SABORATIERRA_page-0001Recortada.jpg">
+        <img class="img-fluid img-thumbnail imgHome" src="src/pictures/SABORATIERRA_page-0001Recortada.jpg">
         <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0002.jpg"> 
         <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0033.jpg">
       </div>
@@ -150,18 +154,37 @@
           <!--
           <img class="img-fluid img-thumbnail" src="src/pictures/carta/SABORATIERRA_page-0029.jpg">-->
        </div>
-       <div class="text-center" id="contentReserva">
-          <h1>Contenido de la pagina Reserva</h1>
-       </div>
-       <div class="text-center" id="contentContacto">
-          <h1>Contenido de la pagina Contacto</h1>
-       </div>
-       <div class="text-center" id="contentHistoria">
-          <h1>Contenido de la pagina Historia</h1>
+       <div class="text-center justify-content-center" id="contentContacto">
+          <br>
+          <img src="src/pictures/shortIcon.png" class="img-fluid imgTotuma">
+          <div id="formularioContacto">
+              <form style="width: 26rem;">
+
+              <!-- Name input -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form4Example1">Nombres</label>
+                <input type="text" id="form4Example1" class="form-control" />
+              </div>
+
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form4Example2">Direccion Correo</label>
+                <input type="email" id="form4Example2" class="form-control" />
+              </div>
+
+              <!--Text Area-->
+              <div class="mb-3 mt-3">
+                <label for="comment">Detalle Solicitud:</label>
+                <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+              </div>
+
+              <!-- Submit button -->
+              <button data-mdb-ripple-init type="button" class="btn btn-danger btn-block mb-4">Enviar</button>
+            </form>
+          </div>
        </div>
        <div class="text-center" id="contenedorubicacion">
-          <br>
-          <img src="src/pictures/shortIcon.png" class="img-fluid" style="width: 200px;">
+          <img src="src/pictures/shortIcon.png" class="img-fluid imgTotuma">
           <h1>Calle 20 # 8 - 13 Local 3</h1>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.2333472420296!2d-73.36267522595956!3d5.532364233888904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a7c2d463042fb%3A0x77a1480fb47ad9ec!2sLa%20Pila%20Del%20Mono!5e0!3m2!1ses!2sco!4v1715437501595!5m2!1ses!2sco" width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
        </div>

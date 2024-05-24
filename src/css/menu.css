@@ -20,7 +20,7 @@ h1 {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #1A1919;
+    
 }
 
 .wrapper {
@@ -28,18 +28,14 @@ body {
 }
 
 #main {
-    position: relative;
-    margin-left: 18%;
     min-height: 100vh;
-    width: 82%;
     overflow: hidden;
     transition: all 0.35s ease-in-out;
-    background-color: whitesmoke;
 }
 
 #sidebar {
     position: fixed;
-    width: 70px;
+    width: 65px;
     height: 100%;
     min-width: 70px;
     z-index: 1000;
@@ -102,7 +98,7 @@ a.sidebar-link {
 
 a.sidebar-link:hover {
     background-color: rgba(255, 255, 255, .075);
-    border-left: 3px solid #3b7ddd;
+    border-left: 3px solid #5dbb54;
 }
 
 .sidebar-item {
@@ -113,11 +109,13 @@ a.sidebar-link:hover {
     position: absolute;
     top: 0;
     left: 70px;
-    background-color: #0e2238;
+    background-color: rgba(255, 255, 25
     padding: 0;
     min-width: 15rem;
     display: none;
 }
+
+
 
 #sidebar:not(.expand) .sidebar-item:hover .has-dropdown+.sidebar-dropdown {
     display: block;
