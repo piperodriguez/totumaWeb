@@ -41,7 +41,8 @@ $(document).ready(function(){
 		  div8: 'divPlatoFuertes',
 		  div9: 'divEnsaladas',
 		  div10: 'divChill',
-		  div11: 'divPostres'
+		  div11: 'divPostres',
+		  div12: 'divBebidas'
 		};
     	accionCapas(objDivs, 'hide');
 		accionCapas({div1: 'divEntradas'}, 'show');
@@ -156,7 +157,13 @@ $(document).ready(function(){
 		const objDivs = {
 		  div1: 'contenedorubicacion',
 		  div2: 'contentEventos',
-		  div7: 'divHome'
+		  div7: 'divHome',
+		  div8: 'divEntradas',
+		  div9: 'divPlatoFuertes',
+		  div10: 'divEnsaladas',
+		  div11: 'divChill',
+		  div12: 'divPostres',
+		  div12: 'divBebidas'
 		};
 		accionCapas(objDivs, 'hide');
     	accionCapas({div1: 'contentContacto'}, 'show');
@@ -181,22 +188,26 @@ $(document).ready(function(){
 const hamBurger = document.querySelector(".toggle-btn");
 hamBurger.addEventListener("click", function () {
 
+	console.log('hicieron click')
 
 	let contenedorMenu, sidebar, contenidoPagina;
 
 	contenedorMenu = document.getElementById("main");
 	sidebar = document.querySelector("#sidebar").classList;
+	console.log(sidebar.value)
+
 	document.querySelector("#sidebar").classList.toggle("expand");
 
 	//contenidoPagina	
 
-	if (sidebar.value == "expand") {
-		//contenedorMenu.style.marginLeft = "18%";
-		//contenedorMenu.style.width = "82%";
-		
+	if (sidebar.value == "") {
+		contenedorMenu.style.marginLeft = "7%";
+		contenedorMenu.style.width = "100%";
+		console.log('aumente ');
 	} else {
-		//contenedorMenu.style.marginLeft = "6%";
-		//contenedorMenu.style.width = "99%";
+		console.log('minimice ');
+		contenedorMenu.style.marginLeft = "20%";
+		contenedorMenu.style.width = "100%";
 	}
    
 });

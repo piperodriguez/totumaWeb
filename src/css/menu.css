@@ -20,6 +20,7 @@ h1 {
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: rgba(0, 0, 0, 0.2);
     
 }
 
@@ -89,6 +90,7 @@ a.sidebar-link {
     font-size: 0.9rem;
     white-space: nowrap;
     border-left: 3px solid transparent;
+    background-color: rgba(255, 255, 255, .075);
 }
 
 .sidebar-link i {
@@ -97,7 +99,7 @@ a.sidebar-link {
 }
 
 a.sidebar-link:hover {
-    background-color: rgba(255, 255, 255, .075);
+    background-color: darkred;
     border-left: 3px solid #5dbb54;
 }
 
