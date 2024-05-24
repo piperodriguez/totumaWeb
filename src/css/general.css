@@ -12,3 +12,7 @@ div#main {
     position: relative;
     margin-left: 20%;
 }
+
+img.d-block.w-100.imagenSlider {
+    height: 900px;
+}
