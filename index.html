@@ -75,25 +75,19 @@
                     </li>
                 </ul>
             </li>
+            
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#conocemos" aria-expanded="false" aria-controls="conocemos">
-                   <i class="lni lni-envelope"></i>
+                <a href="#" class="sidebar-link" id="pageContacto">
+                   <i class="lni lni-popup"></i>
                    <span>Contactanos</span>
                 </a>
-                <ul id="conocemos" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link" id="pageContacto">
-                        <i class="lni lni-popup"></i></i>Datos de Contacto</a>
-                    </li>
-                </ul>
             </li>
-            <li class="sidebar-item">
+            <!--<li class="sidebar-item">
                 <a href="#" class="sidebar-link" id="pageEventos">
                    <i class="lni lni-offer"></i>
                    <span>Eventos</span>
                 </a>
-            </li>
+            </li>-->
         </ul>
         <div class="sidebar-footer">
             <a href="#" class="sidebar-link" id="ubicacion">
@@ -104,6 +98,11 @@
     </aside>
     <!--Contenido Pagina-->
     <div id="main" class="container">
+      <div class="button-container">
+        <button id="rappi-button">
+          <img src="src/pictures/logoRappi.png" id="imgRappi">
+        </button>
+      </div>
       <div id="divHome">
 
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -175,73 +174,69 @@
        </div>
        <div class="text-center justify-content-center" id="contentContacto">
           <br>
-
-
           <div class="card text-center">
-            <div class="card-header">
-              <img src="src/pictures/shortIcon.png" class="img-fluid imgTotuma">
-              <h2><span class="badge bg-secondary">Contactanos</span></h2>
-            </div>
-            <div class="card-body">
-                 
-              <form class="row g-3">
-                <div class="col-md-6">
-                  <label for="inputEmail4" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="inputEmail4">
-                </div>
-                <div class="col-md-6">
-                  <label for="inputPassword4" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="inputPassword4">
-                </div>
-                <div class="col-12">
-                  <label for="inputAddress" class="form-label">Address</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                </div>
-                <div class="col-12">
-                  <label for="inputAddress2" class="form-label">Address 2</label>
-                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                </div>
-                <div class="col-md-6">
-                  <label for="inputCity" class="form-label">City</label>
-                  <input type="text" class="form-control" id="inputCity">
-                </div>
-                <div class="col-md-4">
-                  <label for="inputState" class="form-label">State</label>
-                  <select id="inputState" class="form-select">
-                    <option selected>Choose...</option>
-                    <option>...</option>
-                  </select>
-                </div>
-                <div class="col-md-2">
-                  <label for="inputZip" class="form-label">Zip</label>
-                  <input type="text" class="form-control" id="inputZip">
-                </div>
-                <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                      Check me out
-                    </label>
+              <div class="card-header">
+                  <div class="alert alert-secondary shadow-lg" role="alert">
+                    <img src="src/pictures/logoThree.jpg" class="card-img-top img-fluid imgTotumaTwo shadow-lg" alt="totuma">
                   </div>
-                </div>
-                <div class="col-12">
-                  <button type="submit" class="btn btn-danger">Enviar</button>
-                </div>
-              </form>
-
-            </div>
-            <div class="card-footer text-muted">
-              <div class="alert alert-primary" role="alert">
-                <h5 class="card-title">No dudes en contactarnos</h5>
               </div>
-            </div>
+              <div class="card-body" id="contenedorContacto">
+                  <h3 class="card-title">Comunícate con Nosotros...</h3>
+                  <div class="container px-4">
+                      <div class="row gx-5">
+                          <div class="col">
+                              <div class="p-3 border bg-light">
+                                  <a class="enlaceRedes" href="https://api.whatsapp.com/message/H5VQZ44ILNVOF1?autoload=1&app_absent=0" target="_blank">
+                                      <i class="lni lni-whatsapp"></i> 
+                                      <br>
+                                      Whatsapp
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="col">
+                              <div class="p-3 border bg-light">
+                                  <a class="enlaceRedes" href="https://www.instagram.com/totumaexpress_tunja/?igsh=bDgyb3JxbHAyZjN0" target="_blank">
+                                      <i class="lni lni-instagram-original"></i>
+                                      <br> 
+                                      Instagram
+                                  </a >
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <br><br>
+              <div class="card-footer text-muted" id="pieContacto">
+                  <div class="alert alert-secondary shadow-lg" role="alert">
+
+                    <h5 class="card-title textoContacto">Realiza tu pedido desde </h5>
+                    
+                  </div>
+              </div>
           </div>
 
        </div>
        <div class="text-center" id="contenedorubicacion">
-          <img src="src/pictures/shortIcon.png" class="img-fluid imgTotuma">
-          <h1>Calle 20 # 8 - 13 Local 3</h1>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.2333472420296!2d-73.36267522595956!3d5.532364233888904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a7c2d463042fb%3A0x77a1480fb47ad9ec!2sLa%20Pila%20Del%20Mono!5e0!3m2!1ses!2sco!4v1715437501595!5m2!1ses!2sco" width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <div class="card text-center">
+            <div class="card-header">
+              <div class="alert alert-secondary shadow-lg" role="alert">
+                  <img src="src/pictures/logoThree.jpg" class="card-img-top img-fluid imgTotumaTwo shadow-lg" alt="totuma">
+              </div>
+              
+            </div>
+            <div class="card-body">
+                 
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.23339826418!2d-73.36265008966569!3d5.532356633864322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a7d106e1fe999%3A0x272746871d49be19!2sTotuma%20Express!5e0!3m2!1ses-419!2sco!4v1716582859424!5m2!1ses-419!2sco" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+            <div class="card-footer text-muted">
+              <div class="alert alert-secondary" role="alert">
+                <h5 class="card-title textoContacto">Calle. 20 #8-13, Local 3, Tunja, Boyacá</h5>
+              </div>
+            </div>
+          </div>
+
        </div>
     </div>
 </div>

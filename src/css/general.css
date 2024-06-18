@@ -1,5 +1,8 @@
+body {
+font-family: 'Poppins', sans-serif;
+}
 img.imgTotuma {
-    padding-bottom: 50px;
+    padding-bottom: 10px;
     width: 200px;
 }
 
@@ -9,5 +12,93 @@ div#main {
 }
 
 img.d-block.w-100.imagenSlider {
-    height: 900px;
+    height: 750px;
+    /*padding-top: 20px;*/
+}
+
+
+i.lni.lni-whatsapp {
+    font-size: xx-large;
+    color: #00bb2d;
+}
+
+i.lni.lni-instagram-original{
+    font-size: xx-large;
+    color: #E1306C;      
+}
+
+.alert-secondary {
+    color: #ffffff;
+    background-color: rgb(0 0 0);
+    border-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    height: 150px;
+}
+
+img.imgTotumaTwo {
+    width: 13%;
+}
+
+.enlaceRedes{
+	color: black;
+}
+
+div#contenedorContacto {
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+h5.textoContacto {
+    margin-top: 40px;
+}
+
+.button-container {
+  position: absolute;
+  top: 80%;
+  right: 48px;
+  z-index: 999;
+}
+
+#rappi-button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+#rappi-button:active {
+  transform: scale(0.9);
+  transition: transform 0.2s ease-in-out;
+}
+
+img#imgRappi {
+    width: 120px;
+    height: 110px;
+}
+
+/*Unidades de medida para portatil*/
+@media (max-width: 1440px ) {
+  /* Estilos para la sección de header */
+  body {
+    background-color: #1A1919;
+  }
+  img.imgTotumaTwo {
+    width: 11%;
+}
+
 }
